@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Selction</title>
+</head>
+<style>
+    #nav{
+  display: inline-block;
+  border: 2px solid red;
+  background-color: black;
+  width: 2000px;
+  position: fixed;
+  height: 50px;
+  margin-left: -20px;
+  margin-top: -8px;
+  
+  
+  
+
+  
+}
+body{
+  background-image: url(h12.jpg);
+  background-size: 1280px;
+  background-repeat: no-repeat;
+  /* height: 5000px; */
+}
+#name{
+  margin-left: -7px;
+  /* width: 3000px; */
+  margin-right: -12px;
+}
+.navbar li {
+  display: inline;
+  color: white;
+  font-family: 'Hind Siliguri', sans-serif;
+  margin-left: 0px;
+  padding-left: 0px;
+  
+  /* position: static; */
+ 
+ 
+}
+li :hover{
+  color: gold;
+}
+
+a {
+  
+  padding: 8px;
+  text-decoration: none;
+  color: white;
+  /* background-color: #dddddd; */
+}
+
+
+.navbar{
+  height: 30px;
+  background: #063247;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+ 
+}
+.navbar ul{
+  /* float: right; */
+  margin-right: 30px;
+}
+
+.navbar ul li{
+  display: inline-block;
+}
+
+
+.navbar ul ul{
+  position: absolute;
+  top: 35px;
+  border-top: 3px solid #23dbdb;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: -20px;
+  margin-left: -40px;
+  /* margin-top: -15px; */
+}
+.navbar ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+.navbar ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border: 1px solid #042331;
+  border-top: none;
+  background-color: black;
+  margin-left: 6px;
+}
+.navbar ul ul li a{
+  line-height: 50px;
+}
+.navbar ul ul ul{
+  border-top: none;
+}
+.navbar ul ul ul li{
+  position: -webkit-sticky;
+  top: -50px;
+  left: 150px;
+}
+.navbar ul ul li a i{
+  margin-left: 45px;
+}
+</style>
+<body>
+    <div class="navbar">
+        <div id="nav">
+            <ul>
+                <li> <a href="shop.html">Home</a> </li>
+                <li><a href="#">States
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul>
+                        <li><a href="#">Maharashtra <i class="fas fa-caret-down"></i>
+                            </a>
+                            <ul>
+                                
+                                <li><a href="#">Kolhapur</a></li>
+                                <li><a href="#">Bid</a></li>
+                                <li><a href="#">Solapur</a></li>
+                                <li><a href="#">Sangali</a></li>
+                                <li><a href="#">Satara</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Karnataka <i class="fas fa-caret-down"></i>
+                            </a>
+                            <ul>
+                                <li><a href="#">Bagalkot</a></li>
+                                <li><a href="#">Ballari </a></li>
+                                <li><a href="#">Belagavi</a></li>
+                                <li><a href="#">Bengaluru</a></li>
+                                <li><a href="#">Bidar</a></li>
+                                <li><a href="#">Chamarajanagar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Gujarat <i class="fas fa-caret-down"></i>
+                            </a>
+                            <ul>
+                                <li><a href="#">Ahmedabad</a></li>
+                                <li><a href="#">Amreli</a></li>
+                                <li><a href="#">Anand </a></li>
+                                <li><a href="#">Aravalli </a></li>
+                                <li><a href="#">Banaskantha  </a></li>
+                                <li><a href="#">Bharuch </a></li>
+                                <li><a href="#">Bhavnagar </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li> <a href="About.html">About</a> </li>
+                <li><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
